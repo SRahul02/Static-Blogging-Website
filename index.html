@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogging Website</title>
+    <title>Welcome to My Blog</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a></li>
-                <li><a href="blog-list.html">Blogs</a></li>
-            </ul>
-        </nav>
+        <div class="top-bar">
+            <div class="logo-container">
+                <img class="logo" src="images/logo.png" alt="Logo">
+                <span class="site-name">My Awesome Blog</span>
+            </div>
+            <div class="menu">
+                <button id="menu-toggle" class="menu-button">&#9776;</button>
+                <nav id="dropdown-menu" class="hidden">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog-list.html">Blogs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    
-    <section class="intro">
-        <h1>Welcome to the Blogging Website</h1>
-        <p>Discover insightful articles on various topics. Our blog posts will keep you informed and inspired.</p>
-    </section>
-    
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to My Blog</h1>
+            <p>Explore insightful articles and share your thoughts!</p>
+        </section>
+    </main>
+
     <footer>
-        <p> Contact me at 2310265@iitgn.ac.in | Linkedin: https://www.linkedin.com/in/rahul-singal-78491a19b/</p>
+        <p>Contact me @ 23110265@iitgn.ac.in | LinkedIn: <a href="https://www.linkedin.com/in/rahul-singal-78491a19b/" target="_blank">Rahul Singal</a></p>
     </footer>
-    
-    <script src="script.js"></script>
 </body>
 </html>
