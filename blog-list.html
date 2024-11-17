@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog List</title>
+    <title>Blogs</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog-list.html">Blogs</a></li>
-            </ul>
-        </nav>
+        <div class="top-bar">
+            <div class="logo-container">
+                <img class="logo" src="images/logo.png" alt="Logo">
+                <span class="site-name">My Awesome Blog</span>
+            </div>
+            <div class="menu">
+                <button id="menu-toggle" class="menu-button">&#9776;</button>
+                <nav id="dropdown-menu" class="hidden">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog-list.html">Blogs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    
-    <section class="blog-list">
-        <h2>Our Latest Blogs</h2>
-        <div class="blog-item">
-            <h3><a href="blog1.html">Blog Post 1 Title</a></h3>
-            <p>This is a brief excerpt from the first blog post...</p>
-        </div>
-        <div class="blog-item">
-            <h3><a href="blog2.html">Blog Post 2 Title</a></h3>
-            <p>This is a brief excerpt from the second blog post...</p>
-        </div>
-    </section>
-    
+
+    <main>
+        <section class="blog-list">
+            <h1>All Blogs</h1>
+            <div class="blog-item">
+                <h2><a href="blog1.html">Understanding the Universe</a></h2>
+                <p>An exploration into the mysteries of the cosmos and our place in it.</p>
+            </div>
+            <div class="blog-item">
+                <h2><a href="blog2.html">The Art of Mindfulness</a></h2>
+                <p>Discover how mindfulness can transform your everyday life.</p>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p> Contact me @ 23110265@iitgn.ac.in | LinkedIn: https://www.linkedin.com/in/rahul-singal-78491a19b/</p>
+        <p>Contact me @ 23110265@iitgn.ac.in | LinkedIn: <a href="https://www.linkedin.com/in/rahul-singal-78491a19b/" target="_blank">Rahul Singal</a></p>
     </footer>
 </body>
 </html>
