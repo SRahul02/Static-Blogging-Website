@@ -1,9 +1,23 @@
 /* General Styling */
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
+    height: 100%;
+    display: flex;
     font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
     color: #333;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
 }
 
 header .top-bar {
@@ -81,6 +95,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+    position: relative;
 }
 
 footer a {
