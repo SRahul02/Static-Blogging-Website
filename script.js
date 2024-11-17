@@ -3,6 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownMenu = document.getElementById('dropdown-menu');
 
     menuToggle.addEventListener('click', () => {
-        dropdownMenu.classList.toggle('hidden');
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
     });
 });
